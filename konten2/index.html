@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>kamu mauu yaa</title>
+</head>
+<body style="text-align: center;">
+    <div class="">
+        <div class="card bg-warning mt-3 text-center text-white">
+            <div class="usernama card-body fw-bold display-5">
+                Haii cantikkkk
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-center pidio center style="width: 18rem;">
+        <video preloaded="metadata" src="awb.mp4" class="card-img-top" type="video/mp4" autoplay controls loop>
+    </div>
+
+    <div class="tembak text-center text-warning mt-4 mb-3">
+        <h1>Mau gak jadi istriku???</h1>
+    </div>
+    <div class="">
+        <button id="btn_mau" class="btn btn-warning" onclick='alert("I <3 U")'>Mau</button>&nbsp;
+        <button id="btn_gamau" class="btn btn-warning" onclick="gamau(this)" style="position:absolute">Gamau</button>
+    </div>
+</body>
+<script>
+    function gamau(id){
+        var mau = document.getElementById('btn_mau');
+        var i = Math.floor(Math.random()*300)+1;
+        var j = Math.floor(Math.random()*300)+mau.offsetTop;
+        id.style.left = i+'px';
+        id.style.top = j+'px';
+    }
+</script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

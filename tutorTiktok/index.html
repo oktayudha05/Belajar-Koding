@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Login dulu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-3 bg-primary text-center text-white">
+            <div class="card-body display-6 fw-bold">
+                <h1>Silahkan lengkapi data berikut</h1>
+            </div>
+
+            <!-- alert -->
+            <div class="alert-nama alert alert-warning my-alert d-none " role="alert">
+                <p> Harap isi <strong>Nama, Username,</strong> dan <strong>Nomor telepon</strong> nya dulu!</p>
+            </div>
+            <div class="alert-gagal alert alert-danger my-alert d-none " role="alert">
+                <p> <strong>Gagal tersambung</strong> ke halaman selanjutnya, coba periksa koneksi anda!</p>
+            </div>
+            <!-- /alert -->
+            <div class="card-body display-6 fw-bold mt-3">
+                <form name="submit-to-google-sheet">     
+                    <div class="conNama" >
+                        <div class="input-group mb-2 mt-2 ">
+                            <input name="nama" type="text" class="form-control nama" placeholder="Siapa nama mu?">
+                        </div>
+                    </div>
+                    <div class="conAcc" >
+                        <div class="input-group mb-2 mt-3 ">
+                            <input name="akun" type="text" class="form-control username" placeholder="Username tiktok?">
+                        </div>
+                    </div>
+                    <div class="conTlp" >
+                        <div class="input-group mb-1 mt-3 ">
+                            <input name="nomor" type="number" class="form-control nomor" placeholder="No telepon?">
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 mt-5">
+                        <button type="submit" class="btn btn-outline-info btn-lanjut text-white d-none">Lanjut</button>
+                        <button class="btn btn-info d-none btn-loading text-white" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-warning btn-follow text-white">follow dulu</button>
+
+        </div>
+    </div>
+
+
+    
+    <script>
+        
+    </script>
+</body>
+    <script src="skrip.js"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>download</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-3 bg-primary text-center text-white">
+            <div class="card-body display-6 fw-bold">
+                Download files
+            </div>
+        </div>
+        <div class="d-grid gap-2 mt-5">
+            <button class="btn btn-outline-primary text-primary downloadFile downloadFile1">Click disini</button>
+        </div>
+    </div>
+
+    <script>
+        var btnDownload = document.querySelector('.downloadFile1');
+        btnDownload.addEventListener('click', function(e){
+            awe()
+        });
+
+        $(document).ready(function(){
+            $('.downloadFile').click(function(e) {
+                e.preventDefault();
+                window.location.href = "alertRiooo.rar";
+            });
+        });
+
+       
+        var awe = function(){
+            Swal.fire({
+                title: `Info!`,
+                icon:`info`,
+                text: `Aku ada buka jasa buat web statis dengan harga jauh dibawah pasaran dan free hosting, kalo minat bisa chat di wa ya`,
+                confirmButtonColor: 'rgb(117, 198, 126)',
+                showCancelButton: true,
+                cancelButtonColor: 'rgb(97, 166, 196)',
+                cancelButtonText: 'Nanti yaa!',
+                confirmButtonText: 'Whatsapp!',
+                allowOutsideClick: false,
+            }).then((result)=>{
+                if(result.isConfirmed){
+                    function wa(){
+                        window.open("https://api.whatsapp.com/send?phone=6285772951900&text=Hallo%20rioo%20", '_blank')
+                    }wa();
+                }
+            });
+        };
+    </script>
+</body>
+<script src="dist/sweetalert2.all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>
